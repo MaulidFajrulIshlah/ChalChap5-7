@@ -1,4 +1,4 @@
-package com.geminiboy.chalchap5
+package com.geminiboy.chalchap5.view
 
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -7,7 +7,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.ViewGroup
 import android.widget.Button
-import android.widget.Spinner
 import android.widget.Toast
 import com.geminiboy.chalchap5.databinding.ActivityMainBinding
 import com.google.firebase.auth.FirebaseAuth
@@ -53,7 +52,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
-    fun signInWithEmailAndPassword(email: String, password: String) {
+    private fun signInWithEmailAndPassword(email: String, password: String) {
         auth.signInWithEmailAndPassword(email, password)
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {

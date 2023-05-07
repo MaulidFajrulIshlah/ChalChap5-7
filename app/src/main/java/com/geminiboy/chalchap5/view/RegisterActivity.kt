@@ -1,4 +1,4 @@
-package com.geminiboy.chalchap5
+package com.geminiboy.chalchap5.view
 
 import android.content.Context
 import android.content.Intent
@@ -6,7 +6,6 @@ import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
-import com.geminiboy.chalchap5.databinding.ActivityMainBinding
 import com.geminiboy.chalchap5.databinding.ActivityRegisterBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
@@ -25,7 +24,7 @@ class RegisterActivity : AppCompatActivity() {
         insertAcc()
     }
 
-    fun insertAcc(){
+    private fun insertAcc(){
         sharedPreferences = getSharedPreferences("InsertAcc", Context.MODE_PRIVATE)
         binding.RegistBtn.setOnClickListener {
             var getUser = binding.uss.text.toString()
@@ -44,7 +43,7 @@ class RegisterActivity : AppCompatActivity() {
             }
         }
     }
-    fun createUserWithEmailAndPassword(email: String, password: String) {
+    private fun createUserWithEmailAndPassword(email: String, password: String) {
         auth.createUserWithEmailAndPassword(email, password)
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {

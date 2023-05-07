@@ -5,21 +5,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/login"
-    tools:context=".RegisterActivity">
+    android:padding="10dp"
+    tools:context=".view.RegisterActivity">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="164dp"
+        android:layout_centerInParent="true"
         android:layout_marginTop="43dp"
         android:text="@string/register"
         android:textColor="@color/black"
         android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textStyle="bold" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -96,9 +95,7 @@
         android:layout_marginRight="45dp"
         android:layout_below="@+id/RePass"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="25dp"
-
-        >
+        android:layout_marginTop="25dp">
 
         <EditText
             android:id="@+id/cPass"

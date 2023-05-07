@@ -1,4 +1,4 @@
-package com.geminiboy.chalchap5
+package com.geminiboy.chalchap5.view
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -13,12 +13,12 @@ class MovieAdapter(var listMovie : List<Result>,
 
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MovieAdapter.ViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = ItemMovieBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return ViewHolder(view)
     }
 
-    override fun onBindViewHolder(holder: MovieAdapter.ViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.binding.Judul.text = listMovie[position].originalTitle
         holder.binding.Rating.text = listMovie[position].voteAverage.toString()
         holder.binding.Tanggal.text = listMovie[position].releaseDate

@@ -1,4 +1,4 @@
-package com.geminiboy.chalchap5
+package com.geminiboy.chalchap5.view
 
 import android.content.Context
 import android.content.Intent
@@ -6,7 +6,6 @@ import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
-import com.geminiboy.chalchap5.databinding.ActivityHomeBinding
 import com.geminiboy.chalchap5.databinding.ActivityProfilBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
@@ -31,7 +30,7 @@ class ProfilActivity : AppCompatActivity() {
         }
     }
 
-    fun updateUsername() {
+    private fun updateUsername() {
         sharedPreferences = getSharedPreferences("InsertAcc", Context.MODE_PRIVATE)
         binding.Update.setOnClickListener {
             var getUsername = binding.uss.text.toString()

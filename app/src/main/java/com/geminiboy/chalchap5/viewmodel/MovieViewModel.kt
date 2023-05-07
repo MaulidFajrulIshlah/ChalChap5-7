@@ -10,8 +10,8 @@ import retrofit2.Callback
 import retrofit2.Response
 
 class MovieViewModel : ViewModel(){
-    lateinit var liveDataMovie: MutableLiveData<List<Result>>
-    lateinit var liveDetail: MutableLiveData<com.geminiboy.chalchap5.model.Result>
+    var liveDataMovie: MutableLiveData<List<Result>>
+    var liveDetail: MutableLiveData<com.geminiboy.chalchap5.model.Result>
     init {
         liveDataMovie = MutableLiveData()
         liveDetail = MutableLiveData()
@@ -25,22 +25,17 @@ class MovieViewModel : ViewModel(){
                 if (response.isSuccessful){
                     val movieresponse = response.body()
                     liveDataMovie.postValue(movieresponse?.results)
-
                 }else{
                     liveDataMovie.value = emptyList()
                 }
             }
-
             override fun onFailure(call: Call<MovieApi<Result>>, t: Throwable) {
                 liveDataMovie.value = emptyList()
             }
-
         })
-
-
     }
     fun getMovieDetail(movieId:Int) {
-        RetrofitClient.instance.getMovieDetails(movieId, "e73ba4baa44323fa06e5497760f26ab5")
+        RetrofitClient.instance.getMovieDetails(movieId, "5e61354ae870271823c8ccac3c5c2403")
             .enqueue(object : Callback<com.geminiboy.chalchap5.model.Result> {
                 override fun onResponse(call: Call<Result>, response: Response<Result>) {
                     if (response.isSuccessful) {
