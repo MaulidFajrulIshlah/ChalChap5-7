@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+    <TextView
+        android:id="@+id/Detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="68dp"
+        android:text="@string/detail"
+        android:textColor="@color/black"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="262dp"
+        android:layout_height="262dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="36dp"
+        android:layout_below="@id/Detail"
+        tools:srcCompat="@tools:sample/avatars"
+        android:contentDescription="@string/todo" />
+
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginStart="10dp"
+        android:text="@string/textview"
+        android:textColor="@color/black"
+        android:layout_below="@id/imageView2"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/Tanggal"
+        android:textColor="@color/black"
+        android:layout_below="@id/judul"
+        android:layout_marginStart="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="@string/textview"/>
+
+    <TextView
+        android:id="@+id/Deskripsi"
+        android:layout_width="match_parent"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginStart="10dp"
+        android:layout_below="@id/Tanggal"
+        android:text="@string/textview"/>
+
+
+</RelativeLayout>
