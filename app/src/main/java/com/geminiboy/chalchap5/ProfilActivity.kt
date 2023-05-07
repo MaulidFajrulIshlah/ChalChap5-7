@@ -31,7 +31,7 @@ class ProfilActivity : AppCompatActivity() {
         }
     }
 
-    fun updateUsername() {
+    private fun updateUsername() {
         sharedPreferences = getSharedPreferences("InsertAcc", Context.MODE_PRIVATE)
         binding.Update.setOnClickListener {
             var getUsername = binding.uss.text.toString()

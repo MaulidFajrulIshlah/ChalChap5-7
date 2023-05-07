@@ -53,7 +53,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
-    fun signInWithEmailAndPassword(email: String, password: String) {
+    private fun signInWithEmailAndPassword(email: String, password: String) {
         auth.signInWithEmailAndPassword(email, password)
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {

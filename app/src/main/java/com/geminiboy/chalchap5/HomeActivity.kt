@@ -10,9 +10,9 @@ import com.geminiboy.chalchap5.databinding.ActivityHomeBinding
 import com.geminiboy.chalchap5.viewmodel.MovieViewModel
 
 class HomeActivity : AppCompatActivity() {
-    lateinit var binding: ActivityHomeBinding
-    lateinit var sharedPreferences: SharedPreferences
-    lateinit var movieAdapter: MovieAdapter
+    lateinit var binding : ActivityHomeBinding
+    lateinit var sharedPreferences : SharedPreferences
+    lateinit var movieAdapter : MovieAdapter
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityHomeBinding.inflate(layoutInflater)
@@ -39,10 +39,10 @@ class HomeActivity : AppCompatActivity() {
         getVM.getMovie()
         binding.rcvcon.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
         binding.rcvcon.adapter = movieAdapter
-        getVM.liveDataMovie.observe(this,{ movie ->
+        getVM.liveDataMovie.observe(this) { movie ->
             movieAdapter.listMovie = movie
             movieAdapter.notifyDataSetChanged()
-        })
+        }
 
     }
 }
