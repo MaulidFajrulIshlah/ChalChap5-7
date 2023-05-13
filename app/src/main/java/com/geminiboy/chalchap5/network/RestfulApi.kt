@@ -1,10 +1,12 @@
 package com.geminiboy.chalchap5.network
 
 import com.geminiboy.chalchap5.model.MovieApi
+import com.geminiboy.chalchap5.model.Result
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Path
 import retrofit2.http.Query
+
 
 interface RestfulApi {
     @GET("movie/popular")

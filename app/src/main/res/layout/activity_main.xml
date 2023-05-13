@@ -8,17 +8,17 @@
     tools:context=".view.MainActivity">
 
     <TextView
-        android:id="@+id/Login"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:layout_marginTop="62dp"
-        android:layout_marginEnd="180dp"
-        android:text="Login" />
+    android:id="@+id/Login"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentEnd="true"
+    android:textColor="@color/black"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    android:layout_marginTop="62dp"
+    android:layout_marginEnd="180dp"
+    android:text="@string/login" />
 
 
     <ImageView
@@ -29,7 +29,8 @@
         android:layout_alignParentEnd="true"
         android:layout_marginTop="38dp"
         android:layout_marginEnd="142dp"
-        app:srcCompat="@drawable/baseline_person_24" />
+        app:srcCompat="@drawable/baseline_person_24"
+        android:contentDescription="@string/todo" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/Email"
@@ -47,8 +48,11 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:hint="@string/email"
-            tools:ignore="SpeakableTextPresentCheck" />
+            tools:ignore="SpeakableTextPresentCheck"
+            android:inputType="textEmailAddress"
+            android:autofillHints="" />
     </com.google.android.material.textfield.TextInputLayout>
+
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/Password"
         android:layout_width="match_parent"
@@ -58,9 +62,7 @@
         android:layout_marginRight="45dp"
         android:layout_below="@+id/Email"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="25dp"
-
-        >
+        android:layout_marginTop="25dp">
 
         <EditText
             android:id="@+id/insPass"
@@ -69,7 +71,8 @@
             android:backgroundTint="#DEFDFC"
             android:layout_height="match_parent"
             android:hint="@string/password"
-            tools:ignore="SpeakableTextPresentCheck" />
+            tools:ignore="SpeakableTextPresentCheck"
+            android:autofillHints="" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
@@ -81,6 +84,7 @@
         android:layout_marginStart="157dp"
         android:backgroundTint="#B0DAFF"
         android:layout_marginTop="65dp"
+        android:textColor="@color/black"
         android:text="@string/login" />
 
     <TextView
@@ -93,7 +97,5 @@
         android:layout_marginStart="142dp"
         android:layout_marginTop="5dp"
         android:text="@string/belum_punya_akun" />
-
-
 
 </RelativeLayout>

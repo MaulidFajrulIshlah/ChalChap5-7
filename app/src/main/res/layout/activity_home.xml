@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="15dp"
     android:background="@drawable/bg"
+    android:padding="10dp"
     tools:context=".view.HomeActivity">
 
 
@@ -13,39 +14,39 @@
         android:id="@+id/welcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="15dp"
         android:layout_marginTop="24dp"
-        android:text="WELCOME"
+        android:text="@string/welcome"
         android:textColor="@color/black"
         android:textSize="20sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"/>
 
     <TextView
         android:id="@+id/Home"
         android:textSize="20sp"
-        android:layout_centerInParent="true"
         android:textColor="@color/black"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="176dp"
-        android:text="Home"
+        android:text="@string/home"
         android:layout_below="@id/welcome"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rcvcon"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/Home"
-        android:layout_centerInParent="true"
-        android:layout_marginTop="24dp" />
+        android:layout_marginTop="24dp"
+        android:layout_below="@id/Home"/>
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="38dp"
         android:layout_height="37dp"
+        android:layout_marginStart="228dp"
         android:layout_marginTop="24dp"
         android:layout_alignParentEnd="true"
-        app:srcCompat="@drawable/baseline_person_24" />
+        app:srcCompat="@drawable/baseline_person_24"
+        android:contentDescription="@string/todo" />
 
 </RelativeLayout>
