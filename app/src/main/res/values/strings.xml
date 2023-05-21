@@ -1,25 +1,27 @@
 <resources>
     <string name="app_name" translatable="false">ChalChap5</string>
-    <string name="detail">Detail</string>
-    <string name="register">Daftar</string>
-    <string name="masukkan_username">Masukkan Username</string>
-    <string name="masukkan_email">Masukkan Email</string>
-    <string name="masukan_konfirmasi_password">Masukan Konfirmasi Password</string>
-    <string name="daftar">Daftar</string>
-    <string name="email">Email</string>
-    <string name="password">Kata Sandi</string>
-    <string name="login">Masuk</string>
-    <string name="belum_punya_akun">Belum Punya akun?</string>
-    <string name="username">Nama Panggilan</string>
-    <string name="nama_lengkap">Nama Lengkap</string>
-    <string name="alamat">Alamat</string>
-    <string name="update">Perbarui</string>
-    <string name="logout">Keluar</string>
-    <string name="masukkan_password">Masukan Password</string>
-    <string name="tanggal_lahir">Tanggal Lahir</string>
-    <string name="textview">TextView</string>
-    <string name="todo">TODO</string>
-    <string name="home">Home</string>
-    <string name="welcome">WELCOME</string>
-    <string name="profile">Profile</string>
+    <string name="detail" translatable="false">Detail</string>
+    <string name="register" translatable="false">Daftar</string>
+    <string name="masukkan_username" translatable="false">Masukkan Username</string>
+    <string name="masukkan_email" translatable="false">Masukkan Email</string>
+    <string name="masukan_konfirmasi_password" translatable="false">Masukan Konfirmasi Password</string>
+    <string name="daftar" translatable="false">Daftar</string>
+    <string name="email" translatable="false">Email</string>
+    <string name="password" translatable="false">Kata Sandi</string>
+    <string name="login" translatable="false">Masuk</string>
+    <string name="belum_punya_akun" translatable="false">Belum Punya akun?</string>
+    <string name="username" translatable="false">Nama Panggilan</string>
+    <string name="nama_lengkap" translatable="false">Nama Lengkap</string>
+    <string name="alamat" translatable="false">Alamat</string>
+    <string name="update" translatable="false">Perbarui</string>
+    <string name="logout" translatable="false">Keluar</string>
+    <string name="masukkan_password" translatable="false">Masukan Password</string>
+    <string name="tanggal_lahir" translatable="false">Tanggal Lahir</string>
+    <string name="textview" translatable="false">TextView</string>
+    <string name="todo" translatable="false">TODO</string>
+    <string name="home" translatable="false">Home</string>
+    <string name="welcome" translatable="false">WELCOME</string>
+    <string name="profile" translatable="false">Profile</string>
+    <string name="judul" translatable="false">judul</string>
+    <string name="_05_05_2023" translatable="false">05_05_2023</string>
 </resources>

@@ -10,11 +10,13 @@ import com.geminiboy.chalchap5.databinding.ActivityProfilBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class ProfilActivity : AppCompatActivity() {
-    lateinit var binding: ActivityProfilBinding
-    lateinit var sharedPreferences: SharedPreferences
-    lateinit var auth: FirebaseAuth
+    private lateinit var binding: ActivityProfilBinding
+    private lateinit var sharedPreferences: SharedPreferences
+    private lateinit var auth: FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -33,11 +35,11 @@ class ProfilActivity : AppCompatActivity() {
     private fun updateUsername() {
         sharedPreferences = getSharedPreferences("InsertAcc", Context.MODE_PRIVATE)
         binding.Update.setOnClickListener {
-            var getUsername = binding.uss.text.toString()
+            val getUsername = binding.uss.text.toString()
             var getNamaLengkap = binding.Nama.text.toString()
             var getTanggalLahir = binding.TglLahir.text.toString()
             var getAlamat = binding.Alamat.text.toString()
-            var updateUser = sharedPreferences.edit()
+            val updateUser = sharedPreferences.edit()
             updateUser.putString("uss", getUsername)
             updateUser.apply()
             Toast.makeText(this, "UpdateBerhasil", Toast.LENGTH_SHORT).show()

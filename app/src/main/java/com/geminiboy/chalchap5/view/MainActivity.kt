@@ -12,11 +12,14 @@ import com.geminiboy.chalchap5.databinding.ActivityMainBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
-    lateinit var binding: ActivityMainBinding
-    lateinit var sharedPreferences: SharedPreferences
-    lateinit var auth: FirebaseAuth
+
+    private lateinit var binding: ActivityMainBinding
+    private lateinit var sharedPreferences: SharedPreferences
+    private lateinit var auth: FirebaseAuth
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         auth = Firebase.auth
@@ -43,10 +46,10 @@ class MainActivity : AppCompatActivity() {
     fun getAcc(){
         sharedPreferences = getSharedPreferences("InsertAcc", MODE_PRIVATE)
         binding.btnLogin.setOnClickListener {
-            var getEmail = sharedPreferences.getString("email", "")
-            var getPass = sharedPreferences.getString("pass", "")
-            var email = binding.insEmail.text.toString()
-            var pass = binding.insPass.text.toString()
+            val getEmail = sharedPreferences.getString("email", "")
+            val getPass = sharedPreferences.getString("pass", "")
+            val email = binding.insEmail.text.toString()
+            val pass = binding.insPass.text.toString()
             if(email == getEmail.toString() && pass == getPass.toString()){
                 signInWithEmailAndPassword(email = getEmail.toString(), password = getPass.toString())
             }
