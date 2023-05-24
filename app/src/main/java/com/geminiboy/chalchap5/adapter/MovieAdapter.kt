@@ -8,8 +8,7 @@ import com.bumptech.glide.Glide
 
 class MovieAdapter(var listMovie : List<com.geminiboy.chalchap5.model.Result>,
                    var onItemClick: ((com.geminiboy.chalchap5.model.Result) -> Unit) ) : RecyclerView.Adapter<MovieAdapter.ViewHolder>() {
-    class ViewHolder (var binding: ItemMovieBinding): RecyclerView.ViewHolder(binding.root){
-    }
+    class ViewHolder (var binding: ItemMovieBinding): RecyclerView.ViewHolder(binding.root)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = ItemMovieBinding.inflate(LayoutInflater.from(parent.context), parent, false)

@@ -1,7 +1,6 @@
 package com.geminiboy.chalchap5.network
 
 import com.geminiboy.chalchap5.model.MovieApi
-import com.geminiboy.chalchap5.model.Result
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Path
@@ -13,7 +12,7 @@ interface RestfulApi {
     fun getPopularMovies(
         @Query("api_key") apiKey: String,
         @Query("page") page: Int
-    ): Call<MovieApi<com.geminiboy.chalchap5.model.Result>>
+    ): Call<MovieApi>
     @GET("movie/{id}")
     fun getMovieDetails(
         @Path("id") movieId: Int,

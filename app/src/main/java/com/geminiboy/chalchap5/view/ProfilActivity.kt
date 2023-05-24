@@ -36,9 +36,9 @@ class ProfilActivity : AppCompatActivity() {
         sharedPreferences = getSharedPreferences("InsertAcc", Context.MODE_PRIVATE)
         binding.Update.setOnClickListener {
             val getUsername = binding.uss.text.toString()
-            var getNamaLengkap = binding.Nama.text.toString()
-            var getTanggalLahir = binding.TglLahir.text.toString()
-            var getAlamat = binding.Alamat.text.toString()
+            binding.Nama.text.toString()
+            binding.TglLahir.text.toString()
+            binding.Alamat.text.toString()
             val updateUser = sharedPreferences.edit()
             updateUser.putString("uss", getUsername)
             updateUser.apply()

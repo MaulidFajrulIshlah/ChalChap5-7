@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources><string name="detail">Dettaglio</string>
+<resources>
+    <string name="detail">Dettaglio</string>
     <string name="register">Registrazione</string>
     <string name="masukkan_username">Inserisci il nome utente</string>
     <string name="masukkan_email">Inserisci l\'email</string>
@@ -15,4 +15,5 @@
     <string name="update">Aggiorna</string>
     <string name="logout">Esci</string>
     <string name="masukkan_password">Inserisci la password</string>
-    <string name="tanggal_lahir">Data di nascita</string></resources>
+    <string name="tanggal_lahir">Data di nascita</string>
+</resources>

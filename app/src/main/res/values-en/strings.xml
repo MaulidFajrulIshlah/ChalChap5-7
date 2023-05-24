@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="detail">Detail</string>
     <string name="register">Register</string>
     <string name="masukkan_username">Enter Username</string>
     <string name="masukkan_email">Enter Email</string>

@@ -20,8 +20,8 @@ class MovieViewModel  @Inject constructor(private var api : RestfulApi): ViewMod
         api.getPopularMovies(
             apiKey = "e73ba4baa44323fa06e5497760f26ab5",
             page = 1
-        ).enqueue(object : Callback<MovieApi<Result>> {
-            override fun onResponse(call: Call<MovieApi<Result>>, response: Response<MovieApi<Result>>) {
+        ).enqueue(object : Callback<MovieApi> {
+            override fun onResponse(call: Call<MovieApi>, response: Response<MovieApi>) {
                 if (response.isSuccessful){
                     val movieresponse = response.body()
                     liveDataMovie.postValue(movieresponse?.results)
@@ -31,7 +31,7 @@ class MovieViewModel  @Inject constructor(private var api : RestfulApi): ViewMod
                 }
             }
 
-            override fun onFailure(call: Call<MovieApi<Result>>, t: Throwable) {
+            override fun onFailure(call: Call<MovieApi>, t: Throwable) {
                 liveDataMovie.value = emptyList()
             }
 
