@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    tools:context=".view.DetailActivity">
+
+    <TextView
+        android:id="@+id/Detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="68dp"
+        android:text="@string/detail"
+        android:textColor="@color/black"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        tools:ignore="VisualLintOverlap" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="262dp"
+        android:layout_height="262dp"
+        android:layout_below="@id/Detail"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="35dp"
+        android:contentDescription="@string/todo"
+        tools:ignore="ImageContrastCheck"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="@string/textview"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_below="@id/imageView2"
+        tools:ignore="VisualLintOverlap" />
+
+    <TextView
+        android:id="@+id/Tanggal"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="@string/textview"
+        android:layout_below="@id/judul"
+        tools:ignore="VisualLintOverlap" />
+
+    <TextView
+        android:id="@+id/Deskripsi"
+        android:layout_width="match_parent"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="@string/textview"
+        android:layout_below="@id/Tanggal"
+        tools:ignore="VisualLintOverlap" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/detailFab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/favfillicn"
+            tools:ignore="DuplicateSpeakableTextCheck,DuplicateSpeakableTextCheck,ImageContrastCheck" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

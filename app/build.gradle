@@ -24,7 +24,20 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
+    flavorDimensions("Movie")
+    productFlavors{
 
+        movie1{
+            applicationIdSuffix ".movie1"
+            dimension "Movie"
+        }
+
+        movie2{
+            applicationIdSuffix ".movie2"
+            dimension "Movie"
+        }
+
+    }
 
     buildTypes {
         release {

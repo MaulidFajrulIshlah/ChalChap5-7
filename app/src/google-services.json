@@ -1,0 +1,38 @@
+{
+  "project_info": {
+    "project_number": "321203383203",
+    "project_id": "chal5-7",
+    "storage_bucket": "chal5-7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:321203383203:android:99cb02495fafe67ff2c816",
+        "android_client_info": {
+          "package_name": "com.geminiboy.chalchap5.movie2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "321203383203-5n694bk5qp0godbs7ser0hq665r5b3f6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.geminiboy.chalchap5",
+            "certificate_hash": "c7eb109ec26f2787d881d7f6b599bc44a7d75a98"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBB0Q9PfTplAUgZYf0pKdBKIlQwMoJChNg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,19 @@
+<resources>
+    <string name="detail">Dettaglio</string>
+    <string name="register">Registrazione</string>
+    <string name="masukkan_username">Inserisci il nome utente</string>
+    <string name="masukkan_email">Inserisci l\'email</string>
+    <string name="masukan_konfirmasi_password">Inserisci la conferma della password</string>
+    <string name="daftar">Registrati</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Accedi</string>
+    <string name="belum_punya_akun">Non hai un account?</string>
+    <string name="username">Nome utente</string>
+    <string name="nama_lengkap">Nome completo</string>
+    <string name="alamat">Indirizzo</string>
+    <string name="update">Aggiorna</string>
+    <string name="logout">Esci</string>
+    <string name="masukkan_password">Inserisci la password</string>
+    <string name="tanggal_lahir">Data di nascita</string>
+</resources>
